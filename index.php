@@ -10,6 +10,15 @@
 
     <link rel="stylesheet" href="./static/css/all.css" />
     <link rel="stylesheet" href="./static/css/index.css" />
+    <style>
+        h2+p{
+            padding: 10px 150px;
+        }
+        h2{
+            margin: 20px 0;
+        }
+        html{line-height: 20px;}
+    </style>
 </head>
 <body>
     <div id="topnav">
@@ -46,15 +55,15 @@
         </div>
         <div>
             <h2>Our Mandate</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio nemo magnam ex ad cum dolorem expedita, amet et numquam voluptas consectetur blanditiis autem vel, ducimus totam laudantium dignissimos hic alias?</p>
+            <p>The mandate of the Uganda Police Force (UPF) is to maintain law and order, prevent and detect crime, and protect life and property in Uganda. The UPF is responsible for enforcing criminal laws and traffic regulations, investigating crimes, and responding to emergencies and other incidents. The UPF is also responsible for maintaining public order and safety, and for working with other law enforcement agencies and community organizations to prevent and reduce crime.</p>
         </div>
         <div>
             <h2>Our Vision</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit nemo numquam consequuntur voluptatum quod porro, expedita amet voluptatibus assumenda natus! Tenetur iure at dolorem architecto, possimus repellat unde eligendi quam.</p>
+            <p>to be a highly professional and efficient police service, capable of providing effective and efficient services to the community and committed to upholding the rule of law and human rights.</p>
         </div>
         <div>
             <h2>Our Mission</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum expedita commodi doloremque voluptatem! Nesciunt ducimus quis esse tempora molestiae nulla perspiciatis ipsam, sunt, quam natus earum non facere voluptate optio?</p>
+            <p>to provide effective and efficient policing services to the community and to uphold the rule of law and human rights.</p>
         </div>
     </div>
     <footer>

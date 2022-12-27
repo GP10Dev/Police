@@ -1,0 +1,50 @@
+/* all */
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html{
+    font-size: 16px;
+    font-family: sans-serif !important;
+}
+
+h1{
+    font-size: 3rem;
+}
+
+h2{
+    font-size: 2.5rem;
+}
+h3{
+    font-size: 2rem;
+}
+h4{
+    font-size: 1.8rem;
+}
+h5{
+    font-size: 1.4rem;
+}
+h6{
+    font-size: 1.2rem;
+}
+
+/* clear floats */
+.cls{
+    min-height: 1px;
+    clear: both;
+    display: block;
+}
+.nav ul{
+    list-style: none;
+}
+a, a:visited, a:hover, a:active{
+    text-decoration: none;
+    color: inherit;
+}
+
+
+*[title="still underconstruction"]{
+    cursor: not-allowed;
+}

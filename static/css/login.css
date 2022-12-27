@@ -1,0 +1,107 @@
+body{
+    background-color: rgba(16, 16, 114, 0.849) ;
+}
+#main{
+    border: 1px solid black;
+    width: 80%;
+    position: relative;
+    left: 50%;
+    top: 100px;
+    transform: translate(-50%,0);
+    background-color: #fff;
+    padding: 50px 10px;
+    box-shadow: 5px 5px 30px black;
+    border-radius: 10px;
+}
+#main div#orglogo,
+#main div#orgcred,
+#main #forgotkey{
+    width: 50%;
+    float: left;
+    text-align: center;
+}
+#main div#orgcred{
+    border-left: 1px solid grey;
+}
+#orgcred form{
+    text-align: center;
+}
+#orgcred form div{
+    width: 100%;
+    margin-top: 10px;
+}
+#forgotkey section div:first-of-type p,
+#orgcred form div:first-of-type p{
+    font-size: 1.2rem;
+}
+#orgcred form div label{
+    display: block;
+    margin: 5px 0;
+}#orgcred form div label[for='user'],
+#orgcred form div label[for='passwd']{
+    visibility: hidden;
+}
+#orgcred form div label[for='cookie']{
+    display: inline;
+}
+#orgcred form div input[type='email'],
+#orgcred form div input[type='password']{
+    line-height: 3rem;
+    width: 60%;
+    text-align: center;
+    border-radius: 30px;
+}
+
+#orgcred form div input[type='submit']{
+    width: 30%;
+    border: none;
+    background-color: blue;
+    color: white;
+    line-height: 2rem;
+    font-size: 1.2rem;
+    border-radius: 20px;
+}
+
+#orgcred hr{
+    margin: 10px 0;
+    width: 80%;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%,0);
+}
+ div.links p{
+    margin: 10px 0;
+    color: blue;
+    cursor: pointer;
+    text-align: center;
+}
+ div.links p span{
+    margin: 0 10px;
+}
+
+
+
+#main #forgotkey{
+    display: none;
+    border-left: 1px solid grey;
+    text-align: left;
+    padding: 10px;
+}
+#main #forgotkey section{
+    padding: 0 10px;
+}
+#forgotkey section div:first-of-type p{
+    text-align: center;
+}
+#forgotkey section p{
+    margin: 10px 0;
+}
+#forgotkey section ul{
+    padding: 0 0 0 20px;
+}
+#forgotkey section ul li{
+    line-height: 2rem;
+}
+.note{
+    font-weight: bolder;
+}

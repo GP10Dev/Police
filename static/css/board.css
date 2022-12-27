@@ -1,0 +1,17 @@
+#main{text-align: center;}
+#main section{
+    box-sizing: border-box;
+    float: left;
+    width: 45%;
+    background-color: rgba(128, 128, 128, 0.712);
+    padding: 20px;
+    text-align: center;
+    vertical-align: middle;
+    align-items: center;
+    margin: 10px;
+    line-height: 1.5rem;
+}
+#intro{
+    font-size: 1.3rem;
+    margin: 10px 0;
+}

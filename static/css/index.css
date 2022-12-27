@@ -1,0 +1,113 @@
+#topnav{
+    width: 100%;
+    color: #ffffff;
+    background-color: rgb(22, 22, 199);
+    padding: 10px;
+}
+#topnav section{
+    width: 50%;
+    float: left;
+}
+#topnav section.org{
+    text-align: center;
+}
+#topnav section #sitelogo{
+    width: 50px;
+    display: inline-block;
+    align-items: start;
+    vertical-align: middle;
+    background-color: #ffffff;
+}
+#topnav section #sitelogo img{
+    width: 100%;
+    height: auto;
+}
+#topnav section #sitename{
+    display: inline-block;
+    align-items: start;
+    vertical-align: middle;
+    padding-left: 10px;
+}
+
+#topnav section.navsect{
+    text-align: right;
+    align-items: start;
+    vertical-align: middle;
+}
+#topnav section.navsect ul{
+    align-items: start;
+    vertical-align: middle;
+    height: 50px;
+    color: white;
+}
+#topnav section.navsect ul li{
+    display: inline-block;
+    align-items: start;
+    vertical-align: middle;
+    border-radius: 2px;
+    border: 1px solid #ffffff;
+    background-color: rgb(22, 22, 199);
+    line-height: 2rem;
+    padding: 5px 10px;
+    margin-right: 10px;
+}
+
+#topnav section.navsect a:link > li,
+#topnav section.navsect a:visited > li ,
+#topnav section.navsect a:active > li{
+    color: white;
+    text-decoration: none;
+}
+#topnav section.navsect ul li:hover{
+    opacity: 0.8;
+    cursor: pointer;
+    box-shadow: 0 5px 5px black;
+}
+
+/* main */
+div.main{
+    text-align: center;
+}
+div.main #welcome{
+    min-height: 500px;
+    background-image: url("./../img/police-car-999.jpeg");
+    background-size: 100%;
+    /* background-size: contain; */
+    background-position: 50% 70% ;
+}
+#welcome div{
+    position: absolute;
+    /* position: relative; */
+    top: 60%;
+    /* bottom: 10px; */
+    left: 50%;
+    width: 100%;
+    transform: translate(-50%,0);
+    color: rgba(0, 0, 0, 1);
+    background-color: rgba(225, 225, 225, 0.464);
+    padding: 10px 50px;
+    opacity: 0.9;
+}
+#welcome div h3{
+    font-weight: lighter;
+}
+#welcome div button{
+    background-color: blue;
+    color: white;
+    padding: 10px;
+    margin: 10px;
+    opacity: 0.7;
+    border: 0;
+}
+
+
+
+/* footer */
+footer{
+    background-color: rgb(236, 235, 234);
+    color: #505050;
+    text-align: center;
+    padding: 10px 0;
+}
+
+

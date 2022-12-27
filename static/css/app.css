@@ -1,0 +1,65 @@
+section.pg-col{
+    position: relative;
+    top: 0;
+    bottom: 0;
+    float: left;
+    background-color: rgb(13, 13, 59);
+    color: white;
+}
+section#pg-col-1{
+    position: absolute;
+    width: 20%;
+}
+section#pg-col-2{
+    float: right;
+    width: 80%;
+}
+
+section#pg-col-1 div#head {
+    background-color: rgb(240, 234, 234);
+    color: rgba(30, 30, 167, 0.884);
+    text-align: center;
+}
+section#pg-col-1 div#head h2{
+    font-weight: lighter;
+    font-size: 1.5rem;
+}
+div#head > div{
+    width: 100px;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%,0);
+}
+div#head img{
+    width: 100%;
+}
+#pg-col-1 nav{
+    padding: 0;
+}
+#pg-col-1 nav ul{
+    list-style: none;
+}
+#pg-col-1 nav ul li{
+    line-height: 2rem;
+    padding:5px 0 5px 30px;
+}
+#pg-col-1 nav ul li:hover{
+    background-color: black;
+}
+header{
+    text-align: right;
+    padding-right: 50px;
+}
+header ul{
+    list-style: none;
+}
+header ul li{
+    display: inline-flex;
+    line-height: 2rem;
+    margin: 0 10px;
+}
+
+section#main{
+    background-color: #fff;
+    color: black;
+}

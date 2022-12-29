@@ -9,3 +9,5 @@ How it works?
  > if any suspects option is active, the system redirects to the suspects page.
  > new suspects can be attached to the same case...
  > by default, the logged in user is assigned to the case
+ > any officer can add the exhibits
+ > a single case can have many exhibits

@@ -21,15 +21,15 @@
 
     // verify force number and passwd 
     require "setcon.php";
-
+    
     $sql = "SELECT `forceNum`, `fname`, `oname`, `lname`, `password` FROM `officer` 
     WHERE `forceNum` = '".$sect[0]."' AND `password` = '".$passwd."';";
 
-    $recon = mysqli_connect($con, $sql);
+    $recon = mysqli_query($con, $sql);
     $rows = mysqli_num_rows($recon); // count rows
 
     if($rows < 1){
-        die("failed to log in. Check credentials and try again Or contact statin admin. error 404x4"); //x4 is failed login -> bad details
+        die("failed to log in. Check credentials and <a href='./../../login.php'>try again</a> Or contact station admin. error 404x4"); //x4 is failed login -> bad details
     } else{
         // set session ('s') variables
         $_SESSION['sfnum'] = $rows['forceNum'];

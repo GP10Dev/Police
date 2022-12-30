@@ -4,7 +4,8 @@
     if(isset($_POST['user'])){
         $uname = $_POST['user'];
         $passwd = $_POST['passwd'];
-        $opt = $_POST['opt']; // for cookies 
+        if(isset($_POST['cookieopt']))
+        $opt = $_POST['cookieopt']; // for cookies 
     } else{
         die("no valid credentials found. Fields were empty. Error 404x3"); //x3 is blank fields sent
         session_abort();

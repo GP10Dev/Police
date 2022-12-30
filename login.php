@@ -32,7 +32,7 @@
                         <input name="passwd" type="password" placeholder="Password" required />
                     </div>
                     <div>
-                        <input name="opt" type="radio" value="false"/>
+                        <input name="cookieopt" type="checkbox" />
                         <label for="cookie">Remember me</label>
                     </div>
                     <div>

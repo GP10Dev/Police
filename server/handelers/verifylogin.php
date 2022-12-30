@@ -46,6 +46,7 @@
   /*
     known errors
         >> email may not be case sensitive
+        >> cookies were not set
     
     error code -x values
         1. failed server --- setcon

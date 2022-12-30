@@ -42,6 +42,15 @@
         header("Location: ./../../app.php");
     }
 
+  /*
+    known errors
+        >> email may not be case sensitive
     
+    error code -x values
+        1. failed server --- setcon
+        2. wrong domain --- verifylogin -> might not be officer
+        3. user name might not be set
+        4. bad details ---  -> wrong password or force number
+  */  
     
 ?>

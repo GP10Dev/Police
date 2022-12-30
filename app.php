@@ -1,3 +1,4 @@
+<?php session_start(); ?>
 <!DOCTYPE html>
 
 <html lang="en">
@@ -42,7 +43,7 @@
         </header>
         <section id="main">
             <div id='intro'>
-                <p>Welcome back, <span>Mr. Ahairwe!</span></p>
+                <p>Welcome back, <span><?php $_SESSION['sfname'] ?></span></p>
             </div>
             <section>
                 <p>0</p>

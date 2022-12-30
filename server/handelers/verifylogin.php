@@ -26,12 +26,13 @@
     WHERE `forceNum` = '".$sect[0]."' AND `password` = '".$passwd."';";
 
     $recon = mysqli_query($con, $sql);
-    $rows = mysqli_num_rows($recon); // count rows
+    $num_rows = mysqli_num_rows($recon); // count rows
 
-    if($rows < 1){
+    if($num_rows < 1){
         die("failed to log in. Check credentials and <a href='./../../login.php'>try again</a> Or contact station admin. error 404x4"); //x4 is failed login -> bad details
     } else{
         // set session ('s') variables
+        $rows = mysqli_fetch_assoc($recon);
         $_SESSION['sfnum'] = $rows['forceNum'];
         $_SESSION['sfname'] = $rows['fname'];
         $_SESSION['slname'] = $rows['lname'];

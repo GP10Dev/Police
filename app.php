@@ -43,7 +43,7 @@
         </header>
         <section id="main">
             <div id='intro'>
-                <p>Welcome back, <span><?php $_SESSION['sfname'] ?></span></p>
+                <p>Welcome back, <span><?php echo $_SESSION['sfname'] ; ?></span></p>
             </div>
             <section>
                 <p>0</p>

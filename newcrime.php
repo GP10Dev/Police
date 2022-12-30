@@ -46,7 +46,7 @@
                 <h2>New crime record</h2>
             </div>
             <div>
-                <form action="./server/addnewcrime.php" method="post">
+                <form action="./server/handelers/addnewcrime.php" method="post">
                     <div><h3>Reporter</h3></div>
                     <div class="cls"></div>
                     <div>
@@ -75,7 +75,7 @@
                     </div>
                     <div>
                         <label>Date of birth</label>
-                        <input name="dob" type='text' >
+                        <input name="dob" type='date' >
                     </div>
                     <div>
                         <label>Address</label>

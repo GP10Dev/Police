@@ -38,7 +38,7 @@
         // success
 
         require "endcon.php";
-        header("Location: ./../app.php");
+        header("Location: ./../../app.php");
     }
 
     

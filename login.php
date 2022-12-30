@@ -19,7 +19,7 @@
                 </a>
             </div>
             <div id="orgcred">
-                <form method="post" action="./server/handlers/verifylogin.php">
+                <form method="post" action="./server/handelers/verifylogin.php">
                     <div>
                         <p id="title">Welcome back!</p>
                     </div>

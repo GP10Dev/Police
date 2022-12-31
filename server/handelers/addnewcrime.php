@@ -7,7 +7,7 @@
     $rnin = $_POST['nin'];
     $rdob = $_POST['dob'];
     $radd = $_POST['addr'];
-    $rtribe = $_POST['tribe'];
+    $rtribe = $_POST['tribe']; 
     $rphone = $_POST['phone'];
     // case details
     $cdoc = $_POST['doc']; // date of occurance

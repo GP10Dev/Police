@@ -105,8 +105,8 @@
                     </div>
                     <div>
                         <label>Any suspects?</label>
-                        <input type='radio' name="anysus"> <label>Yes</label>
-                        <input type='radio' name="anysus"> <label>No</label>
+                        <input type='radio' name="anysus" value="yes" required> <label>Yes</label>
+                        <input type='radio' name="anysus" value="no"> <label>No</label>
                         <!-- if yes, redirect to the suspects form -->
                     </div>
                     <div>

@@ -8,7 +8,7 @@
         $opt = $_POST['cookieopt']; // for cookies 
     } else{
         die("no valid credentials found. Fields were empty. Error 404x3"); //x3 is blank fields sent
-        session_abort();
+        session_destroy();
     }
     
     // verify if email is force email
@@ -16,7 +16,7 @@
     // check domain
     if($sect[1] !== "upf.go.ug"){
         die("wrong email used. Error code 404x2<br>Go to <a href='./../../login.php'>Login</a>."); // x2 for wrong domain of email
-        session_abort();
+        session_destroy();
     }
 
     // verify force number and passwd 

@@ -1,3 +1,4 @@
+<?php session_start(); ?>
 <!DOCTYPE html>
 
 <html lang="en">
@@ -97,7 +98,16 @@
                     </div>
                 </form>
             </div>
-            
+
+            <?php
+            if (isset($_SESSION['lastcase'])) {
+                echo "
+                <section>
+                    <p>Your last case was " . $_SESSION['lastcase'] . "</p>
+                </section> ";
+                unset($_SESSION['lastcase']);
+            }
+            ?>
         </section>
     </section>
 </body>

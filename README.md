@@ -2,6 +2,14 @@
 # Introduction to Database management
 Police Crime Record Management Sytem.
 
+How to install on your pc?
+    >> verify that you have all requirement.
+    >> clone this project to {project-folder} located in either www(for wamp) or htdocs(for xampp).
+    >> import the police.sql into your local server. make sure no other database is named police. If it exists, ask Jordan or google on how to solve this.
+    >> browse to localhost/Police/
+
+    happy crime recording.
+
 How it works?
  > A police officer logs in
  > Logged in officer can record new crime

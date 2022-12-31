@@ -48,20 +48,25 @@
             <div>
                 <form action="./server/handelers/addnewcrime.php" method="post">
                     <div><h3>Reporter</h3></div>
-                    <div class="cls"></div>
-                    <div>
+                    <!-- <div>
+                        <p>Is case being reported by uganda?</p>
+                        <input type="checkbox" onchange="byug(this.value)" id="govrep"/>
+                    </div>
+                    <div>&nbsp;</div> -->
+                    <div class="cls"></div> 
+                    <div class="rdata">
                         <label>First Name</label>
                         <input name="fname" type='text' >
                     </div>
-                    <div>
+                    <div class="rdata">
                         <label>Last Name</label>
                         <input name="lname" type='text' >
                     </div>
-                    <div>
+                    <div class="rdata">
                         <label>Other Name</label>
                         <input name="oname" type='text' >
                     </div>
-                    <div>
+                    <div class="rdata">
                         <label>Gender</label>
                         <input name="gender" type="text" list="gender">
                         <datalist id="gender">
@@ -69,21 +74,25 @@
                             <option value="female">Female</option>
                         </datalist>
                     </div>
-                    <div>
+                    <div class="rdata">
                         <label>NIN Name</label>
                         <input name="nin" type='text' >
                     </div>
-                    <div>
+                    <div class="rdata">
                         <label>Date of birth</label>
                         <input name="dob" type='date' >
                     </div>
-                    <div>
+                    <div class="rdata">
                         <label>Address</label>
                         <input name="addr" type='text' >
                     </div>
-                    <div>
+                    <div class="rdata">
                         <label>Tribe</label>
                         <input name="tribe" type='text' >
+                    </div>
+                    <div class="rdata">
+                        <label>Phone</label>
+                        <input name="phone" type='tel' >
                     </div>
                     <div class="cls"></div>
                     <div>
@@ -108,16 +117,22 @@
                         <label>Scene crime</label>
                         <textarea name="scene" rows='7' cols='10' placeholder="where it happened?" col='40' row='10'></textarea >
                     </div>
-                   <!-- <div class='cls'></div> -->
+                    <div>
+                        <b><p>if case already exists, enter case ref here. else leave as is</p></b>
+                        <input type="text" name="sdref"/>
+                    </div>
+                    <!-- <div></div> -->
+                   <div class='cls'></div>
                     <div>
                         <input type='submit' value='file case'>
                         <!--  return auto set sd Ref and attached station details -->
-                        <input type='button' value='reset'/>
+                        <input type='reset' value='reset'/>
                     </div>
                 </form>
             </div>
             
         </section>
     </section>
+    <!-- <script src="./static/js/byug.js"></script> -->
 </body>
 </html>

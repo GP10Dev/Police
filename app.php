@@ -15,8 +15,24 @@
     <link rel="stylesheet" href="./static/css/form.css" />
     <link rel="stylesheet" href="./static/css/board.css" />
 
+    <script>
+        function setdashboard(){
+            var xmlhttp = new XMLHttpRequest();
+            xmlhttp.onreadystatechange = function () {
+                if(this.readyState == 4 && this.status == 200){
+                    var resp = this.responseText;
+                    var data = JSON.parse(resp);
+                    document.getElementById("td_cases").innerHTML = data[0];
+                    document.getElementById("exhibits").innerHTML = data[2];
+                    document.getElementById("all_cases").innerHTML = data[1];
+                }
+            }  ; 
+            xmlhttp.open("GET", "./server/appcount.php", true);
+            xmlhttp.send();
+        }
+    </script>
 </head>
-<body>
+<body onload="setdashboard()">
     <section class="pg-col" id="pg-col-1">
         <div id="head">
             <div id="logo">
@@ -46,16 +62,16 @@
                 <p>Welcome back, <span><?php echo $_SESSION['sfname'] ; ?></span></p>
             </div>
             <section>
-                <p>0</p>
+                <p id="td_cases">0</p>
                 <p>New cases today</p>
             </section>
             <section>
-                <p>0</p>
+                <p id="exhibits">0</p>
                 <p>New new exhibits</p>
             </section>
             <div class="cls"></div>
             <section>
-                <p>0</p>
+                <p id="all_cases">0</p>
                 <p>Total cases</p>
             </section>
 
@@ -64,5 +80,6 @@
         </section>
     </section>
     <!-- <footer>hey</footer> -->
+    
 </body>
 </html>

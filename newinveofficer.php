@@ -13,6 +13,22 @@
     <link rel="stylesheet" href="./static/css/app.css" />
     <link rel="stylesheet" href="./static/css/form.css" />
 
+    <script>
+    function logout(){
+        var xmlhttp = new XMLHttpRequest();
+        xmlhttp.onreadystatechange = function () {
+            if(this.readyState == 4 && this.status == 200){
+                alert("session killed");
+                // <?php
+                //     sleep(2);
+                //     header("location: ./login.php");
+                // ?>
+            }
+        }  ; 
+        xmlhttp.open("GET", "./server/logout.php", true);
+        xmlhttp.send();
+    }
+    </script>
 </head>
 <body>
     <section class="pg-col" id="pg-col-1">
@@ -34,9 +50,7 @@
                 <?php include "./server/emergency.php" ?>
             </section>
             <ul>
-                <li>Assignments</li>
-                <li>Reminders</li>
-                <li>Log out</li>
+                <?php require './server/sec_nav.php'; ?>
             </ul>
         </header>
         <section id="main">
@@ -44,6 +58,11 @@
                 <h3>Officers</h3>
                 <p>New Investigating officer.  Only registered by OC</p>
             </div>
+            <?php 
+                if($_SESSION['sdepartment'] != 'IT' || $_SESSION['sdepartment'] != 'OC'){
+                    die("<p>This section is strictly for OCs. Please check with IT Department if this is an error.</p>") ;
+                } ;
+            ?>
             <div>
                 <form method="post" action="./server/handelers/addofficer.php">
                 <div>

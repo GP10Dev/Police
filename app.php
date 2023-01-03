@@ -31,6 +31,22 @@
             xmlhttp.send();
         }
     </script>
+    <script>
+    function logout(){
+        var xmlhttp = new XMLHttpRequest();
+        xmlhttp.onreadystatechange = function () {
+            if(this.readyState == 4 && this.status == 200){
+                alert("session killed");
+                // <?php
+                //     sleep(2);
+                //     header("location: ./login.php");
+                // ?>
+            }
+        }  ; 
+        xmlhttp.open("GET", "./server/logout.php", true);
+        xmlhttp.send();
+    }
+    </script>
 </head>
 <body onload="setdashboard()">
     <section class="pg-col" id="pg-col-1">
@@ -52,9 +68,7 @@
                 <?php include "./server/emergency.php" ?>
             </section>
             <ul>
-                <li>Assignments</li>
-                <li>Reminders</li>
-                <li>Log out</li>
+                <?php require './server/sec_nav.php'; ?>
             </ul>
         </header>
         <section id="main">

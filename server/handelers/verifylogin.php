@@ -22,7 +22,7 @@
     // verify force number and passwd 
     require "setcon.php";
     
-    $sql = "SELECT `forceNum`, `fname`, `oname`, `lname`, `password` FROM `officer` 
+    $sql = "SELECT `forceNum`, `fname`, `oname`, `lname`, `password`, `department` FROM `officer` 
     WHERE `forceNum` = '".$sect[0]."' AND `password` = '".$passwd."';";
 
     $recon = mysqli_query($con, $sql);
@@ -37,6 +37,7 @@
         $_SESSION['sfname'] = $rows['fname'];
         $_SESSION['slname'] = $rows['lname'];
         $_SESSION['soname'] = $rows['oname'];
+        $_SESSION['sdepartment'] = $rows['department'];
         // success
 
         require "endcon.php";

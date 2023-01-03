@@ -70,7 +70,7 @@ div.main{
 }
 div.main #welcome{
     min-height: 500px;
-    background-image: url("./../img/police-car-999.jpeg");
+    background-image: url("./../img/murder2.gif");
     background-size: 100%;
     /* background-size: contain; */
     background-position: 50% 70% ;
@@ -84,7 +84,7 @@ div.main #welcome{
     width: 100%;
     transform: translate(-50%,0);
     color: rgba(0, 0, 0, 1);
-    background-color: rgba(225, 225, 225, 0.464);
+    background-color: rgba(225, 225, 225, 0.864);
     padding: 10px 50px;
     opacity: 0.9;
 }

@@ -64,7 +64,7 @@
                     </div>    
                 <div>
                         <label>First Name</label>
-                        <input type="text" name="fname"  value="<?php echo $_SESSION['sfnum']; ?>">
+                        <input type="text" name="fname"  value="<?php echo $_SESSION['sfname']; ?>">
                     </div>
                     <div>
                         <label>Last Name</label>

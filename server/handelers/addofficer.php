@@ -1,4 +1,6 @@
 <?php
+session_start();
+
 $force_number = $_POST['force_number'];
 $fname = $_POST['fname'];
 $lname = $_POST['lname'];
@@ -11,7 +13,7 @@ $rank = $_POST['rank'];
 $department = $_POST['department'];
 $tribe = $_POST['tribe'];
 $station = $_POST['station'];
-$password=$_POST['password'];
+$password = $force_number;
 
 // default password is forcenumber
 

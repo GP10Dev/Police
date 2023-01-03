@@ -110,10 +110,10 @@
                         <label>Station of Attachment</label>
                         <input type='text' name="station" >
                     </div>
-                    <div>
+                    <!-- <div>
                         <label>password</label>
                         <input type="password" name="password">
-                    </div>
+                    </div> -->
                     <div>
                         <P>Default password is their Force Number.</P>
                     </div>

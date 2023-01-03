@@ -5,6 +5,6 @@
     <a href="crimesuspect.php"><li>Suspect</li></a>
     <a href="exhibits.php"><li>Exhibits</li></a>
     <a href="newinveofficer.php"><li>Officers</li></a>
-    <a href=""><li title="still underconstruction" >My Profiles</li></a>
+    <a href="profiles.php"><li>My Profiles</li></a>
 </ul>
 <?php require "./server/footer.php" ; ?>

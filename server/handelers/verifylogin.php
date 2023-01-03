@@ -24,7 +24,7 @@ session_start();
     // verify force number and passwd 
     require "setcon.php";
     
-    $sql = "SELECT `forceNum`, `fname`, `oname`, `lname`, `password`, `department` FROM `officer` 
+    $sql = "SELECT `forceNum`, `dob`, `rank`, `nin`, `tribe`, `gender`, `phone`, `station`, `password`, `fname`, `oname`, `lname`, `password`, `department` FROM `officer` 
     WHERE `forceNum` = '".$sect[0]."' AND `password` = '".$passwd."';";
 
     $recon = mysqli_query($con, $sql);
@@ -40,6 +40,14 @@ session_start();
         $_SESSION['slname'] = $rows['lname'];
         $_SESSION['soname'] = $rows['oname'];
         $_SESSION['sdepartment'] = $rows['department'];
+        $_SESSION['sdob'] = $rows['dob'] ;
+        $_SESSION['snin'] = $rows['nin'] ;
+        $_SESSION['srank'] = $rows['rank'] ;
+        $_SESSION['stribe'] = $rows['tribe'] ;
+        $_SESSION['sgender'] = $rows['gender'] ;
+        $_SESSION['sphone'] = $rows['phone'] ;
+        $_SESSION['sstation'] = $rows['station'] ;
+        $_SESSION['spassword'] = $rows['password'] ;
         // success
 
         require "endcon.php";

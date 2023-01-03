@@ -66,11 +66,11 @@
         </header>
         <section id="main">
             <div>
-                <h2>New crime Suspect</h2>
+                <h2>New crime Suspect / Witness</h2>
             </div>
             <div>
                 <form method="post" action="./server/handelers/addsuspect.php">
-                    <div><h3>Suspect Details</h3></div>
+                    <div><h3>Suspect / Witness Details</h3></div>
                     <div  class="cls"></div>
                     <div>
                         <label>First Name</label>
@@ -114,12 +114,10 @@
                     </div>
                     <section style="padding-top: 20px;">
                         <p class="linDisp" style="margin-right:50px">Suspect Status</p>
-                        <input class="linDisp" type='radio' name="status" value="1" required>
-                        <label class="linDisp">Arrested</label>
-                        <input class="linDisp" type='radio' name="status" value="2" required>
-                        <label class="linDisp">Not Arrested</label> 
-                        <input class="linDisp" type='radio' name="status" value="3" required>
-                        <label class="linDisp">Released</label>
+                        <input class="linDisp" type='radio' name="status" value="suspect" required>
+                        <label class="linDisp">Suspect</label>
+                        <input class="linDisp" type='radio' name="status" value="witness" required>
+                        <label class="linDisp">Witness</label> 
                     </section>
                     <div class="cls"></div>
                     <div>

@@ -45,50 +45,58 @@
                 <p>New Investigating officer.  Only registered by OC</p>
             </div>
             <div>
-                <form>
-                    <div>
+                <form method="post" action="./server/handelers/addofficer.php">
+                <div>
+                        <label>Force Number</label>
+                        <input type="text" name="force_number">
+                    </div>    
+                <div>
                         <label>First Name</label>
-                        <input type="text">
+                        <input type="text" name="fname">
                     </div>
                     <div>
                         <label>Last Name</label>
-                        <input type='text' >
+                        <input type='text' name="lname" >
                     </div>
                     <div>
                         <label>Other Name</label>
-                        <input type='text' >
+                        <input type='text' name="oname" >
                     </div>
                     <div>
                         <label>NIN Name</label>
-                        <input type='text' >
+                        <input type='text' name="nin" >
                     </div>
                     <div>
                         <label>Gender</label>
-                        <input type='text' >
+                        <input type='text' name="gender" >
                     </div>
                     <div>
                         <label>Date of birth</label>
-                        <input type='text' >
+                        <input type='date' name="dob" >
                     </div>
                     <div>
                         <label>Phone</label>
-                        <input type='phone' >
+                        <input type='tel' name="phone" >
                     </div>
                     <div>
                         <label>Rank</label>
-                        <input type='text' >
+                        <input type='text' name="rank" >
                     </div>
                     <div>
                         <label>Department</label>
-                        <input type='text' >
+                        <input type='text' name="department" >
                     </div>
                     <div>
                         <label>Tribe</label>
-                        <input type='text' >
+                        <input type='text' name="tribe" >
                     </div>
                     <div>
                         <label>Station of Attachment</label>
-                        <input type='text' >
+                        <input type='text' name="station" >
+                    </div>
+                    <div>
+                        <label>password</label>
+                        <input type="password" name="password">
                     </div>
                     <div>
                         <P>Default password is their Force Number.</P>

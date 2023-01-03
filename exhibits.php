@@ -1,3 +1,4 @@
+<?php session_start(); ?>
 <!DOCTYPE html>
 
 <html lang="en">
@@ -44,34 +45,36 @@
                 <h2>Exhibit Slip.</h2>
             </div>
             <div>
-                <form>
+                <form method="post" action="./server/handelers/exhibit.php">
                     <!-- <div>Exhibit Slip Details</div> -->
-                    <div>
+                    <!-- <div>
                         <label>Serial Number</label>
-                        <input type='text' >
-                    </div>
+                        <input type='text' n >
+                    </div> -->
                     <div>
                         <label>Case ref</label>
-                        <input type="text" />
+                        <input type="text" name="sdref" />
                     </div>
                     <div>
                         <label>Date</label>
-                        <input type='date' >
+                        <input type='date' name="date">
                     </div>
                     <div>
                         <label>Checked By</label>
-                        <input type='text'  placeholder="use force number">
-                    </div>
-                    
-                
-                    <div>
-                        <label>Description</label>
-                        <textarea cols="10" rows="7"></textarea>
+                        <input type='text' name="checker"  placeholder="use force number">
                     </div>
                     <div>
                         <label>Received by</label>
-                        <input type='text' placeholder="use force number">
+                        <input type='text' name="receiver" placeholder="use force number">
                     </div>
+                    <div>
+                        <label>Description</label>
+                        <textarea cols="10" name="desc" rows="7"></textarea>
+                    </div>
+                    <div class="cls">
+                        &nbsp;
+                    </div>  
+                    
                     <div>
                         <input type='submit' value='Attach'>
                         <!--  return auto set sd Ref and attached station details -->
@@ -79,29 +82,42 @@
                     </div>
                 </form>
             </div>
+            <p>
+                <?php
+                if (isset($_SESSION['lstExb'])) {
+                    echo "last exhibit id is upfEx#" . $_SESSION['lstExb'][0];
+                    unset($_SESSION['lstExb']);
+                }
+                ?>
+            </p>
             <div>
-                <form>
+                <form action="./server/handelers/dispexhibit.php">
                     <div class="cls"></div>
                     <div>
                         <h3>Disposal Exihibit</h3>
                     </div>
                     <div class="cls"></div>
                     <div>
+                        <label>Exhibit Ref</label>
+                        <input type="text" name="exref" />
+                    </div>
+                    <div>
                         <label>Date of Disposal</label>
-                        <input type="date">
+                        <input type="date" name="dod">
                     </div>
                     <div>
                         <label>Final Disposal</label>
-                        <input type="text">
+                        <input type="text" name="fdisp">
                     </div>
                     <div>
                         <label>NIN</label>
-                        <input type="text">
+                        <input type="text" name="fdnin">
                     </div>
                     <div>
                         <label>Disposed by</label>
-                        <input type="text" placeholder="use force number" />
+                        <input type="text" name="dispby" placeholder="use force number" />
                     </div>
+                    <div class="cls"></div>
                     <div>
                         <input type="reset" value="Cancel">
 

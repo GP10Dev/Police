@@ -1,5 +1,7 @@
 <?php
-    session_start(); 
+session_start();
+session_destroy();
+session_start(); 
     // login verififaction
     if(isset($_POST['user'])){
         $uname = $_POST['user'];

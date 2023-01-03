@@ -1,3 +1,4 @@
+<?php session_start(); ?>
 <!DOCTYPE html>
 
 <html lang="en">
@@ -58,11 +59,7 @@
                 <h3>Officers</h3>
                 <p>New Investigating officer.  Only registered by OC</p>
             </div>
-            <?php 
-                if($_SESSION['sdepartment'] != 'IT' || $_SESSION['sdepartment'] != 'OC'){
-                    die("<p>This section is strictly for OCs. Please check with IT Department if this is an error.</p>") ;
-                } ;
-            ?>
+            
             <div>
                 <form method="post" action="./server/handelers/addofficer.php">
                 <div>
@@ -129,5 +126,15 @@
             
         </section>
     </section>
+    <script>
+        let dep = <?php echo $_SESSION['sdepartment']; ?>
+        if(dep != 'IT' || dep != 'it' || dep != 'OC' || dep != 'oc' ){
+            let arr = document.querySelectorAll('input');
+            for(let k = 0; k<arr.length; k++){
+                arr[k].setAttribute('reaadonly');
+            }
+            alert('this page is strictly for higher admin');
+        }
+    </script>
 </body>
 </html>
